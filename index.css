@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  margin: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 4rem;
+  overflow: hidden;
+  width: 20rem;
+}
+
+.content-img {
+  background: linear-gradient(to right, #8c3150, #c9687b);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.content-img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.content-info {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content-info p:nth-child(2) {
+  font-size: 13px;
+}
+.content-info p:nth-child(4) {
+  font-size: 13px;
+}
+
+.content-info__networks {
+  width: 90%;
+}
+
+.content-info__networks ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.content-info__networks ul iconify-icon {
+  display: flex;
+}
+
+.content-info__description {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.content-info p {
+  text-align: center;
+}
+
+.login {
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 20rem;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.login input {
+  border: none;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.login input:focus {
+  outline: 1px solid #935260;
+}
+
+.btn-login {
+  background-color: #c9687b;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.line {
+  border: 1px solid #c9687b;
+  height: 440px;
+}
+
+.inactive {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
